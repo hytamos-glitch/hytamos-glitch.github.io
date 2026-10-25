@@ -239,7 +239,7 @@ footer{display:flex;justify-content:space-between;color:var(--muted);font-size:1
     </div>
     <div class="tile c2 half"><small>Expérience data center</small><div class="num">3<span> mois</span></div><p>NOMAC (ACWA Power), centrales Nour I et II.</p></div>
     <div class="tile t-accent c2 half"><small>Certifications</small><div class="num">4</div><p>Cisco, Google, Fortinet, ANSSI.</p></div>
-    <div class="tile c3 half"><small>Projets menés à terme</small><div class="num">2</div><p>Cloud privé VMware et sécurité d'un réseau industriel SCADA.</p></div>
+    <div class="tile c3 half"><small>Projets menés à terme</small><div class="num">3</div><p>Cloud privé VMware, sécurité SCADA et sécurité d'un assistant IA (LLM).</p></div>
     <div class="tile c3 half"><small>Tests du cloud privé</small><div class="num">10<span>/10</span></div><p>Objectifs validés pendant la campagne de tests.</p></div>
   </div>
 
@@ -250,6 +250,7 @@ footer{display:flex;justify-content:space-between;color:var(--muted);font-size:1
         <p class="lead">Un profil réseaux et sécurité, construit entre le terrain et les projets.</p>
         <p>Diplômé DUT en Gestion des Réseaux et Sécurité à l'EST Ouarzazate, je poursuis un Bachelor Réseaux, Cloud et Cybersécurité à l'EST Kelaat des Sraghna.</p>
         <p>J'ai passé trois mois en data center chez NOMAC (ACWA Power), où j'ai configuré des racks, résolu des incidents et participé à des travaux sur l'infrastructure de cybersécurité. J'y ai aussi sécurisé un réseau SCADA industriel. Mon projet de fin d'études DUT, mené en équipe, a consisté à déployer un cloud privé VMware.</p>
+        <p>Plus récemment, j'ai mené un projet personnel de sécurité des applications d'IA (LLM), de l'attaque à la défense, aligné sur l'OWASP Top 10 for LLM Applications.</p>
         <p>Je cherche maintenant un stage PFE de 3 mois pour approfondir le cloud et la sécurisation d'infrastructures, dans une entreprise locale ou internationale.</p>
       </div>
       <dl class="facts">
@@ -263,12 +264,61 @@ footer{display:flex;justify-content:space-between;color:var(--muted);font-size:1
   </section>
 
   <section id="projets" class="reveal">
-    <div class="sec-head"><h2>Projets</h2><span>02 · Deux projets menés à terme</span></div>
+    <div class="sec-head"><h2>Projets</h2><span>02 · Trois projets menés à terme</span></div>
 
     <article class="project">
       <div class="p-top">
         <div class="p-info">
-          <span class="p-index">01</span><span class="status">Réalisé · soutenu le 10 juin 2026</span>
+          <span class="p-index">01</span><span class="status">Projet personnel · 2026</span>
+          <h3>Sécurité d'un assistant IA bancaire (LLM)</h3>
+          <p class="p-ctx">Projet personnel open-source · red team + blue team · aligné OWASP Top 10 for LLM</p>
+          <p>Conception, test d'intrusion puis durcissement d'un assistant IA intégré à une application bancaire : chatbot RAG + agent outillé, capable de lire des pages web et d'exécuter des virements.</p>
+        </div>
+        <div class="p-visual">
+          <svg viewBox="0 0 440 290" role="img" aria-label="Assistant IA protégé par un garde-fou, relié aux outils RAG, lecture web et virement">
+            <g font-family="Inter,sans-serif" font-size="11.5">
+              <rect x="20" y="14" width="400" height="262" rx="16" fill="#161e33" stroke="#33415f"/>
+              <rect x="160" y="28" width="120" height="32" rx="10" fill="#22305a" stroke="#4a5b85"/><text x="220" y="48" fill="#fff" text-anchor="middle" font-weight="600">Utilisateur</text>
+              <line x1="220" y1="60" x2="220" y2="80" stroke="#6b7a99"/>
+              <rect x="120" y="82" width="200" height="46" rx="10" fill="#1d3fb8"/><text x="220" y="103" fill="#fff" text-anchor="middle" font-weight="600">Agent LLM · Ollama</text><text x="220" y="119" fill="#c9d5fb" text-anchor="middle" font-size="10.5">RAG + outils</text>
+              <rect x="104" y="138" width="232" height="22" rx="11" fill="#e2f5e8"/><text x="220" y="153" fill="#14532d" text-anchor="middle" font-size="10.5" font-weight="600">Garde-fou · anti-injection + confirmation</text>
+              <line x1="150" y1="160" x2="90" y2="196" stroke="#6b7a99"/><line x1="220" y1="160" x2="220" y2="196" stroke="#6b7a99"/><line x1="290" y1="160" x2="350" y2="196" stroke="#6b7a99"/>
+              <rect x="28" y="198" width="120" height="64" rx="10" fill="#161e33" stroke="#33415f"/><text x="88" y="222" fill="#fff" text-anchor="middle" font-weight="600">RAG</text><text x="88" y="240" fill="#8b94aa" text-anchor="middle">ChromaDB</text>
+              <rect x="160" y="198" width="120" height="64" rx="10" fill="#161e33" stroke="#33415f"/><text x="220" y="222" fill="#fff" text-anchor="middle" font-weight="600">Lecture web</text><text x="220" y="240" fill="#8b94aa" text-anchor="middle">fetch_url</text>
+              <rect x="292" y="198" width="120" height="64" rx="10" fill="#161e33" stroke="#33415f"/><text x="352" y="222" fill="#fff" text-anchor="middle" font-weight="600">Virement</text><text x="352" y="240" fill="#8b94aa" text-anchor="middle">confirmation</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><b>5</b><span>classes de vulnérabilités OWASP LLM identifiées et exploitées</span></div>
+        <div class="kpi"><b>5/5</b><span>corrigées après durcissement, mesuré avant / après</span></div>
+        <div class="kpi"><b>100%</b><span>des attaques rejouées neutralisées</span></div>
+      </div>
+      <div class="p-body">
+        <div><h4>Red team · attaque</h4><ul>
+          <li>Prompt injection directe et indirecte (page web piégée lue par l'agent).</li>
+          <li>Fuite de données confidentielles via la base documentaire (RAG).</li>
+          <li>Excessive agency : virement exécuté sans confirmation.</li>
+          <li>Empoisonnement du RAG par un document piégé.</li>
+        </ul></div>
+        <div><h4>Blue team · défense</h4><ul>
+          <li>System prompt durci ; contenu web et documentaire isolé comme donnée non fiable.</li>
+          <li>Détection et neutralisation des motifs d'injection.</li>
+          <li>Filtrage des documents confidentiels du RAG.</li>
+          <li>Confirmation humaine et plafond sur les virements.</li>
+        </ul></div>
+      </div>
+      <div class="p-foot">
+        <div class="tags"><span>OWASP LLM Top 10</span><span>Prompt Injection</span><span>RAG</span><span>Python</span><span>FastAPI</span><span>Ollama</span><span>ChromaDB</span><span>Docker</span><span>GitHub Actions</span></div>
+        <a class="link-arrow" href="https://github.com/hytamos-glitch/llm-security-lab" target="_blank" rel="noopener">Voir le dépôt GitHub ↗</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="p-top">
+        <div class="p-info">
+          <span class="p-index">02</span><span class="status">Réalisé · soutenu le 10 juin 2026</span>
           <h3>Mise en place d'un cloud privé avec virtualisation</h3>
           <p class="p-ctx">Projet de fin d'études DUT · EST Ouarzazate, Université Ibn Zohr · Équipe de 3 · Encadrante : Mme Khadija Touya</p>
           <p>Conception, déploiement et sécurisation d'une infrastructure de cloud privé VMware qui simule un environnement d'entreprise : serveurs virtualisés, administration centralisée et services réseau.</p>
@@ -318,7 +368,7 @@ footer{display:flex;justify-content:space-between;color:var(--muted);font-size:1
     <article class="project">
       <div class="p-top">
         <div class="p-info">
-          <span class="p-index">02</span><span class="status">Réalisé en stage · soutenu le 9 juin 2026</span>
+          <span class="p-index">03</span><span class="status">Réalisé en stage · soutenu le 9 juin 2026</span>
           <h3>Architecture de cybersécurité pour un réseau SCADA</h3>
           <p class="p-ctx">NOMAC (ACWA Power), centrale Nour I, Ouarzazate</p>
           <p>Conception et mise en œuvre d'une architecture qui protège les systèmes SCADA et le réseau industriel d'une centrale, de la segmentation jusqu'à la détection d'intrusion.</p>
@@ -388,8 +438,9 @@ footer{display:flex;justify-content:space-between;color:var(--muted);font-size:1
       <div class="skill"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h4>Sécurité</h4><div class="chips"><span>FortiGate</span><span>IDS/IPS</span><span>Splunk SIEM</span><span>Kali Linux</span><span>Nmap</span><span>hping3</span><span>Hydra</span><span>IEC 62443</span><span>ISO 27001</span></div></div>
       <div class="skill"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M7 18a4 4 0 010-8 5 5 0 019.6-1.5A3.5 3.5 0 0117 18z"/></svg></div><h4>Virtualisation et systèmes</h4><div class="chips"><span>VMware ESXi</span><span>vCenter Server</span><span>VMware Workstation</span><span>Windows Server 2019</span><span>Active Directory</span><span>DNS / DHCP</span><span>Ubuntu</span></div></div>
       <div class="skill"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 21h18M5 21V10l5 3V10l5 3V6l4-2v17"/></svg></div><h4>Systèmes industriels</h4><div class="chips"><span>SCADA</span><span>ScadaBR</span><span>Modbus TCP</span></div></div>
-      <div class="skill"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div><h4>Programmation</h4><div class="chips"><span>Python</span></div></div>
+      <div class="skill"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div><h4>Développement &amp; outils</h4><div class="chips"><span>Python</span><span>FastAPI</span><span>Docker</span><span>CI/CD (GitHub Actions)</span><span>Git</span></div></div>
       <div class="skill"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></div><h4>Support</h4><div class="chips"><span>Support technique</span><span>Résolution d'incidents</span></div></div>
+      <div class="skill"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><circle cx="12" cy="11" r="2.1"/><path d="M12 13.1V15.5"/></svg></div><h4>Sécurité IA / LLM</h4><div class="chips"><span>OWASP LLM Top 10</span><span>Prompt Injection</span><span>RAG</span><span>Red &amp; Blue Team</span><span>Garde-fous</span><span>LLM Security</span></div></div>
     </div>
     <span class="kicker">Certifications</span>
     <div class="certs">
